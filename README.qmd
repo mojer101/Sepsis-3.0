@@ -1,0 +1,69 @@
+---
+title: "Sepsis Data Report"
+format: gfm
+execute: 
+  eval: true
+  warning: false
+  message: false
+editor: visual
+---
+
+```{r}
+#| echo: false
+library(tidyverse)
+library(data.table) ## For the fread function
+library(lubridate)
+library(googledrive)
+source("sepsis_monitor_functions.R")
+drive_deauth()
+file_link <- "https://drive.google.com/file/d/1ytwf6dhjteIGFWJTza9bgWa_ariNzWn7/view?usp=share_link"
+## All data up until now
+new_data <- updateData(file_link) %>%
+  group_by(PatientID) %>%
+  mutate(Heart_rate_change = ifelse(max(ICULOS) > 1, HR[ICULOS == max(ICULOS)] - HR[ICULOS == max(ICULOS)-1], 0))
+## Include only most recent data
+most_recent_data <- new_data %>%
+  group_by(PatientID) %>%
+  filter(obsTime == max(obsTime))
+timenow <- ymd_hms(now())
+```
+
+## Sepsis Data Report
+
+This data was collected on `r max(most_recent_data$obsTime)`
+
+```{r}
+#| echo: false
+dt <- most_recent_data %>%
+  filter(SepsisLabel == 1) %>%
+  arrange(desc(ICULOS)) %>%
+  select(PatientID, ICULOS, HR, Temp, Resp) %>%
+  rename("Hours in Hospital" = ICULOS,
+         "Temperature" = Temp, 
+         "Respiratory Rate" = Resp, 
+         "Heart Rate" = HR) 
+knitr::kable(dt,format="html", caption = paste("Latest Data as of:", max(most_recent_data$obsTime)))
+
+#Change in vitals from last data point
+dt2 <- new_data %>%
+  filter(SepsisLabel == 1) %>%
+  group_by(PatientID) %>%
+  arrange(ICULOS) %>%
+  select(PatientID, ICULOS, HR, Temp, Resp) %>%
+  mutate("Change in Heart Rate" = ifelse(max(ICULOS) >= 1, HR[ICULOS == max(ICULOS)] - HR[ICULOS == max(ICULOS)-1], NA),
+         "Change in Temperature" = ifelse(max(ICULOS) >= 1, Temp[ICULOS == max(ICULOS)] - Temp[ICULOS == max(ICULOS)-1], NA),
+         "Change in Respiration Rate" = ifelse(max(ICULOS) >= 1, Resp[ICULOS == max(ICULOS)] - Resp[ICULOS == max(ICULOS)-1], NA)) %>%
+  slice_max(ICULOS) %>%
+  rename("Hours in Hospital" = ICULOS,
+         "Temperature" = Temp, 
+         "Respiratory Rate" = Resp, 
+         "Heart Rate" = HR) 
+knitr::kable(dt2,format="html", caption = paste("Latest Data as of:", max(most_recent_data$obsTime)))
+```
+
+```{r}
+
+
+
+```
+
