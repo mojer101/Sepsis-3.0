@@ -18,9 +18,8 @@ source("sepsis_monitor_functions.R")
 drive_deauth()
 file_link <- "https://drive.google.com/file/d/1ytwf6dhjteIGFWJTza9bgWa_ariNzWn7/view?usp=share_link"
 ## All data up until now
-new_data <- updateData(file_link) %>%
-  group_by(PatientID) %>%
-  mutate(Heart_rate_change = ifelse(max(ICULOS) > 1, HR[ICULOS == max(ICULOS)] - HR[ICULOS == max(ICULOS)-1], 0))
+new_data <- updateData(file_link) 
+
 ## Include only most recent data
 most_recent_data <- new_data %>%
   group_by(PatientID) %>%
@@ -28,9 +27,9 @@ most_recent_data <- new_data %>%
 timenow <- ymd_hms(now())
 ```
 
-## Sepsis Data Report
-
 This data was collected on `r max(most_recent_data$obsTime)`
+
+## Sepsis Data Tables
 
 ```{r}
 #| echo: false
@@ -61,9 +60,36 @@ dt2 <- new_data %>%
 knitr::kable(dt2,format="html", caption = paste("Latest Data as of:", max(most_recent_data$obsTime)))
 ```
 
+## Plotting of Sepsis Patients Vitals
+
 ```{r}
 
+plotdf <- new_data %>%
+  filter(SepsisLabel == 1)
 
+
+ggplot(data = plotdf, aes(x = ICULOS, y = HR, group = plotdf$PatientID, 
+                          color = plotdf$PatientID))+
+  geom_line(size = 1.5) +
+  labs(color = "Patient ID",
+       x = "Hours in Hospital",
+       y = "Heart Rate in Beats per Minute",
+       title = "HR Over Course of Hospital Visit for Current Sepsis Patients")
+
+ggplot(data = plotdf, aes(x = ICULOS, y =Resp, group = plotdf$PatientID,
+                          color = plotdf$PatientID))+
+  geom_line(size = 1.5) +
+  labs(color = "Patient ID",
+       x = "Hours in Hospital",
+       y = "Heart Rate in Beats per Minute",
+       title = "HR Over Course of Hospital Visit for Current Sepsis Patients")
+
+ggplot(data = plotdf, aes(x = ICULOS, y =Resp, group = plotdf$PatientID,
+                          color = plotdf$PatientID))+
+  geom_line(size = 1.5) +
+  labs(color = "Patient ID",
+       x = "Hours in Hospital",
+       y = "Heart Rate in Beats per Minute",
+       title = "HR Over Course of Hospital Visit for Current Sepsis Patients")
 
 ```
-
