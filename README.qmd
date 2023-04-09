@@ -1,6 +1,6 @@
 ---
 title: "Sepsis Data Report"
-format: html
+format: gfm
 execute: 
   eval: true
   warning: false
