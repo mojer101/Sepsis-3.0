@@ -3,7 +3,7 @@ Sepsis Data Report
 
 ## Sepsis Patient Information
 
-### Data last updated on 2023-04-09 05:18:42
+### Data last updated on 2023-04-09 05:30:16
 
 #### Current Vitals for Patients with Sepsis
 
@@ -87,11 +87,11 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 000510 </td>
-   <td style="text-align:right;"> 35 </td>
+   <td style="text-align:right;"> 36 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 97 </td>
+   <td style="text-align:right;"> 37.00 </td>
+   <td style="text-align:right;"> 24 </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
@@ -186,14 +186,14 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 002012 </td>
-   <td style="text-align:right;"> 36 </td>
+   <td style="text-align:right;"> 37 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 70 </td>
-   <td style="text-align:right;"> 37.06 </td>
-   <td style="text-align:right;"> 11 </td>
-   <td style="text-align:right;"> -4 </td>
+   <td style="text-align:right;"> 74 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -6 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 3 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 002015 </td>
@@ -219,14 +219,14 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 002133 </td>
-   <td style="text-align:right;"> 38 </td>
+   <td style="text-align:right;"> 39 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 93 </td>
+   <td style="text-align:right;"> 90 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 17 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> -3 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -1 </td>
+   <td style="text-align:right;"> 1 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 002426 </td>
