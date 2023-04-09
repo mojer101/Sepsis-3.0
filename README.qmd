@@ -32,7 +32,7 @@ timenow <- ymd_hms(now())
 
 ## Sepsis Patient Information
 
-### Data last updated on `r ymd_hms(now())`
+### Data last updated: `r ymd_hms(now())`
 
 #### Current Vitals for Patients with Sepsis
 
