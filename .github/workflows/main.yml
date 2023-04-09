@@ -41,6 +41,8 @@ jobs:
                any::tidyverse
                any::lubridate
                any::forcats
+               any::plotly
+               any::kableExtra
 
       - name: Render document
         uses: quarto-dev/quarto-actions/render@v2
