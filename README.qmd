@@ -46,7 +46,7 @@ dt <- most_recent_data %>%
          "Temperature" = Temp, 
          "Respiratory Rate" = Resp, 
          "Heart Rate" = HR) 
-knitr::kable(dt,format="html") %>%
+knitr::kable(dt) %>%
   kable_styling(font_size = 14, latex_options = "striped", bootstrap_options = "hover")
 
 
@@ -76,7 +76,7 @@ dt2 <- new_data %>%
 
 
 
-knitr::kable(dt2,format="html") %>%
+knitr::kable(dt2) %>%
   kable_styling(font_size = 14, latex_options = "striped", bootstrap_options = "hover") %>%
   add_footnote("Change refers to change from last hour")
 ```
