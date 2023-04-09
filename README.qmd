@@ -114,7 +114,7 @@ p2
 p3 <- ggplot(data = plotdf, aes(x = ICULOS, y =Temp, group = plotdf$PatientID,
                           color = plotdf$PatientID))+
   theme_classic() + 
-  geom_line(size = 1.5) +
+  geom_point(size = 1.5) +
   labs(color = "Patient ID",
        x = "Hours in Hospital",
        y = "Temperature",
