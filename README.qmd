@@ -30,9 +30,9 @@ most_recent_data <- new_data %>%
 timenow <- ymd_hms(now())
 ```
 
-## Sepsis Patient Information 
+## Sepsis Patient Information
 
-### Data last updated on  `r max(most_recent_data$obsTime)`
+### Data last updated on `r max(most_recent_data$obsTime)`
 
 ##### Current Vitals for Patients with Sepsis
 
