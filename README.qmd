@@ -104,7 +104,7 @@ p2 <- ggplot(data = plotdf, aes(x = ICULOS, y =Resp, group = plotdf$PatientID,
   geom_line(size = 1.5) +
   labs(color = "Patient ID",
        x = "Hours in Hospital",
-       y = "Respiratory Rate in Beats per Minute",
+       y = "Respiratory Rate",
        title = "Respiratory Rate Over Course of Hospital Visit for Current Sepsis Patients")
 
   
