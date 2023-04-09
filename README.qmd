@@ -34,7 +34,7 @@ timenow <- ymd_hms(now())
 
 ### Data last updated on  `r max(most_recent_data$obsTime)`
 
-##### Current Vitals for Patients with Sepsis
+#### Current Vitals for Patients with Sepsis
 
 ```{r}
 #| echo: false
@@ -51,7 +51,7 @@ knitr::kable(dt)
 
 ```
 
-##### Change in Vitals for All Patients
+#### Change in Vitals for All Patients
 
 ```{r}
 #| echo: false
