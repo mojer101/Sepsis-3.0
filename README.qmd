@@ -46,8 +46,7 @@ dt <- most_recent_data %>%
          "Temperature" = Temp, 
          "Respiratory Rate" = Resp, 
          "Heart Rate" = HR) 
-knitr::kable(dt) %>%
-  kable_styling(font_size = 14, latex_options = "striped", bootstrap_options = "hover")
+knitr::kable(dt)
 
 
 ```
@@ -76,9 +75,7 @@ dt2 <- new_data %>%
 
 
 
-knitr::kable(dt2) %>%
-  kable_styling(font_size = 14, latex_options = "striped", bootstrap_options = "hover") %>%
-  add_footnote("Change refers to change from last hour")
+knitr::kable(dt2, caption = "Change refers to change from last hour")
 ```
 
 ```{r}
@@ -96,8 +93,9 @@ p1 <- ggplot(data = plotdf, aes(x = ICULOS, y = HR, group = plotdf$PatientID,
        x = "Hours in Hospital",
        y = "Heart Rate in Beats per Minute",
        title = "HR Over Course of Hospital Visit for Current Sepsis Patients")
-  ggplotly(p = p1)
 
+  
+p1
   
 #Resp
 p2 <- ggplot(data = plotdf, aes(x = ICULOS, y =Resp, group = plotdf$PatientID,
@@ -108,8 +106,9 @@ p2 <- ggplot(data = plotdf, aes(x = ICULOS, y =Resp, group = plotdf$PatientID,
        x = "Hours in Hospital",
        y = "Heart Rate in Beats per Minute",
        title = "HR Over Course of Hospital Visit for Current Sepsis Patients")
-  ggplotly(p = p2)
 
+  
+p2
   
 #Temp
 p3 <- ggplot(data = plotdf, aes(x = ICULOS, y =Temp, group = plotdf$PatientID,
@@ -120,6 +119,7 @@ p3 <- ggplot(data = plotdf, aes(x = ICULOS, y =Temp, group = plotdf$PatientID,
        x = "Hours in Hospital",
        y = "Temperature",
        title = "Respiratory Over Course of Hospital Visit for Current Sepsis Patients") 
-ggplotly(p = p3)
+
+p3
 
 ```
