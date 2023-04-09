@@ -1,6 +1,6 @@
 ---
 title: "Sepsis Data Report"
-format: gfm
+format: html
 execute: 
   eval: true
   warning: false
@@ -13,7 +13,10 @@ editor: visual
 library(tidyverse)
 library(data.table) ## For the fread function
 library(lubridate)
+library(dplyr)
 library(googledrive)
+library(kableExtra)
+library(plotly)
 source("sepsis_monitor_functions.R")
 drive_deauth()
 file_link <- "https://drive.google.com/file/d/1ytwf6dhjteIGFWJTza9bgWa_ariNzWn7/view?usp=share_link"
@@ -27,9 +30,11 @@ most_recent_data <- new_data %>%
 timenow <- ymd_hms(now())
 ```
 
-This data was collected on `r max(most_recent_data$obsTime)`
+## Sepsis Patient Information 
 
-## Sepsis Data Tables
+### Data last updated on  `r max(most_recent_data$obsTime)`
+
+##### Current Vitals for Patients with Sepsis
 
 ```{r}
 #| echo: false
@@ -41,55 +46,80 @@ dt <- most_recent_data %>%
          "Temperature" = Temp, 
          "Respiratory Rate" = Resp, 
          "Heart Rate" = HR) 
-knitr::kable(dt,format="html", caption = paste("Latest Data as of:", max(most_recent_data$obsTime)))
+knitr::kable(dt,format="html") %>%
+  kable_styling(font_size = 14, latex_options = "striped", bootstrap_options = "hover")
+
+
+```
+
+##### Change in Vitals for All Patients
+
+```{r}
+#| echo: false
 
 #Change in vitals from last data point
 dt2 <- new_data %>%
-  filter(SepsisLabel == 1) %>%
   group_by(PatientID) %>%
-  arrange(ICULOS) %>%
-  select(PatientID, ICULOS, HR, Temp, Resp) %>%
-  mutate("Change in Heart Rate" = ifelse(max(ICULOS) >= 1, HR[ICULOS == max(ICULOS)] - HR[ICULOS == max(ICULOS)-1], NA),
-         "Change in Temperature" = ifelse(max(ICULOS) >= 1, Temp[ICULOS == max(ICULOS)] - Temp[ICULOS == max(ICULOS)-1], NA),
-         "Change in Respiration Rate" = ifelse(max(ICULOS) >= 1, Resp[ICULOS == max(ICULOS)] - Resp[ICULOS == max(ICULOS)-1], NA)) %>%
+  arrange(ICULOS) %>% 
+  select(PatientID, ICULOS, SepsisLabel, HR, Temp, Resp) %>%
+  mutate("Heart Rate Change" = ifelse(max(ICULOS) >= 1, HR[ICULOS == max(ICULOS)] - HR[ICULOS == max(ICULOS)-1], NA),
+         "Temperature Change" = ifelse(max(ICULOS) >= 1, Temp[ICULOS == max(ICULOS)] - Temp[ICULOS == max(ICULOS)-1], NA),
+         "Respiration Rate Change" = ifelse(max(ICULOS) >= 1, Resp[ICULOS == max(ICULOS)] - Resp[ICULOS == max(ICULOS)-1], NA),
+         SepsisLabel = ifelse(SepsisLabel == 1, "Yes", "No")) %>%
   slice_max(ICULOS) %>%
   rename("Hours in Hospital" = ICULOS,
          "Temperature" = Temp, 
          "Respiratory Rate" = Resp, 
-         "Heart Rate" = HR) 
-knitr::kable(dt2,format="html", caption = paste("Latest Data as of:", max(most_recent_data$obsTime)))
+         "Heart Rate" = HR,
+         "Sepsis" = SepsisLabel)
+  
+
+
+
+knitr::kable(dt2,format="html") %>%
+  kable_styling(font_size = 14, latex_options = "striped", bootstrap_options = "hover") %>%
+  add_footnote("Change refers to change from last hour")
 ```
 
-## Plotting of Sepsis Patients Vitals
-
 ```{r}
+#| echo: false
 
 plotdf <- new_data %>%
   filter(SepsisLabel == 1)
 
 
-ggplot(data = plotdf, aes(x = ICULOS, y = HR, group = plotdf$PatientID, 
+p1 <- ggplot(data = plotdf, aes(x = ICULOS, y = HR, group = plotdf$PatientID, 
                           color = plotdf$PatientID))+
+  theme_classic()+
   geom_line(size = 1.5) +
   labs(color = "Patient ID",
        x = "Hours in Hospital",
        y = "Heart Rate in Beats per Minute",
        title = "HR Over Course of Hospital Visit for Current Sepsis Patients")
+  ggplotly(p = p1)
 
-ggplot(data = plotdf, aes(x = ICULOS, y =Resp, group = plotdf$PatientID,
+  
+#Resp
+p2 <- ggplot(data = plotdf, aes(x = ICULOS, y =Resp, group = plotdf$PatientID,
                           color = plotdf$PatientID))+
+  theme_classic() + 
   geom_line(size = 1.5) +
   labs(color = "Patient ID",
        x = "Hours in Hospital",
        y = "Heart Rate in Beats per Minute",
        title = "HR Over Course of Hospital Visit for Current Sepsis Patients")
+  ggplotly(p = p2)
 
-ggplot(data = plotdf, aes(x = ICULOS, y =Resp, group = plotdf$PatientID,
+  
+#Temp
+p3 <- ggplot(data = plotdf, aes(x = ICULOS, y =Temp, group = plotdf$PatientID,
                           color = plotdf$PatientID))+
+  theme_classic() + 
   geom_line(size = 1.5) +
   labs(color = "Patient ID",
        x = "Hours in Hospital",
-       y = "Heart Rate in Beats per Minute",
-       title = "HR Over Course of Hospital Visit for Current Sepsis Patients")
+       y = "Temperature",
+       title = "Respiratory Over Course of Hospital Visit for Current Sepsis Patients") 
+ggplotly(p = p3)
 
 ```
