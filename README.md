@@ -3,7 +3,7 @@ Sepsis Data Report
 
 ## Sepsis Patient Information
 
-### Data last updated: 2023-04-10 08:31:32
+### Data last updated: 2023-04-10 09:33:14
 
 #### Current Vitals for Patients with Sepsis
 
@@ -48,25 +48,25 @@ Sepsis Data Report
 <tbody>
   <tr>
    <td style="text-align:left;"> 000313 </td>
-   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:right;"> 34 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 64 </td>
+   <td style="text-align:right;"> 67 </td>
+   <td style="text-align:right;"> 35.83 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 22 </td>
-   <td style="text-align:right;"> -2 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 000335 </td>
-   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 31 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 79 </td>
+   <td style="text-align:right;"> 86 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 23 </td>
-   <td style="text-align:right;"> -13 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 6 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> -1 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 000341 </td>
@@ -114,25 +114,25 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 000673 </td>
-   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 32 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 100 </td>
+   <td style="text-align:right;"> 37.28 </td>
+   <td style="text-align:right;"> 18 </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 000902 </td>
-   <td style="text-align:right;"> 32 </td>
+   <td style="text-align:right;"> 33 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 96 </td>
+   <td style="text-align:right;"> 98 </td>
+   <td style="text-align:right;"> 37.78 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 2 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 20 </td>
-   <td style="text-align:right;"> -5 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -3 </td>
+   <td style="text-align:right;"> 4 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 001083 </td>
@@ -180,14 +180,14 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 001749 </td>
-   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 32 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 79 </td>
+   <td style="text-align:right;"> 75 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 20 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 19 </td>
    <td style="text-align:right;"> -1 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 8 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 001772 </td>
@@ -202,36 +202,36 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 002006 </td>
-   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 32 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 101 </td>
-   <td style="text-align:right;"> 36.50 </td>
-   <td style="text-align:right;"> 18 </td>
-   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:right;"> 71 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -2 </td>
+   <td style="text-align:right;"> 16 </td>
+   <td style="text-align:right;"> -3 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> -5 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 002320 </td>
-   <td style="text-align:right;"> 32 </td>
+   <td style="text-align:right;"> 33 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 65 </td>
-   <td style="text-align:right;"> 36.78 </td>
-   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 62 </td>
    <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> -3 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 3 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 002444 </td>
-   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:right;"> 34 </td>
    <td style="text-align:left;"> No </td>
    <td style="text-align:right;"> 55 </td>
-   <td style="text-align:right;"> 37.94 </td>
-   <td style="text-align:right;"> 18 </td>
-   <td style="text-align:right;"> -2 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -8 </td>
+   <td style="text-align:right;"> 16 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> -2 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 002484 </td>
@@ -279,11 +279,11 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 003535 </td>
-   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 32 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 98 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
@@ -301,25 +301,25 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 004104 </td>
-   <td style="text-align:right;"> 35 </td>
+   <td style="text-align:right;"> 36 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 109 </td>
+   <td style="text-align:right;"> 112 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 18 </td>
-   <td style="text-align:right;"> -2 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> 4 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 004125 </td>
-   <td style="text-align:right;"> 32 </td>
+   <td style="text-align:right;"> 33 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 87 </td>
-   <td style="text-align:right;"> 36.80 </td>
-   <td style="text-align:right;"> 24 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 0.0 </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 004250 </td>
@@ -356,14 +356,14 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 004474 </td>
-   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 34 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 73 </td>
+   <td style="text-align:right;"> 82 </td>
+   <td style="text-align:right;"> 37.67 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 9 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -1 </td>
+   <td style="text-align:right;"> 6 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 004698 </td>
@@ -378,12 +378,12 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 005682 </td>
-   <td style="text-align:right;"> 32 </td>
+   <td style="text-align:right;"> 33 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 70 </td>
+   <td style="text-align:right;"> 68 </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> 14 </td>
-   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> -2 </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> 0 </td>
   </tr>
@@ -411,44 +411,44 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 006750 </td>
-   <td style="text-align:right;"> 35 </td>
+   <td style="text-align:right;"> 37 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 106 </td>
-   <td style="text-align:right;"> 37.50 </td>
-   <td style="text-align:right;"> 17 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> -0.1 </td>
-   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 98 </td>
+   <td style="text-align:right;"> 37.30 </td>
+   <td style="text-align:right;"> 16 </td>
+   <td style="text-align:right;"> -4 </td>
+   <td style="text-align:right;"> -0.2 </td>
+   <td style="text-align:right;"> -5 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 006876 </td>
-   <td style="text-align:right;"> 30 </td>
+   <td style="text-align:right;"> 31 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 76 </td>
-   <td style="text-align:right;"> 36.33 </td>
-   <td style="text-align:right;"> 21 </td>
-   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 75 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:right;"> -1 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 6 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 006963 </td>
+   <td style="text-align:right;"> 32 </td>
+   <td style="text-align:left;"> No </td>
+   <td style="text-align:right;"> 77 </td>
+   <td style="text-align:right;"> 36.83 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 10 </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> 2 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> 006963 </td>
-   <td style="text-align:right;"> 31 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 67 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 11 </td>
-   <td style="text-align:right;"> -7 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -6 </td>
-  </tr>
-  <tr>
    <td style="text-align:left;"> 007058 </td>
-   <td style="text-align:right;"> 35 </td>
+   <td style="text-align:right;"> 36 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 66 </td>
+   <td style="text-align:right;"> 36.39 </td>
+   <td style="text-align:right;"> 21 </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
@@ -532,14 +532,14 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 008943 </td>
-   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:right;"> 35 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 105 </td>
+   <td style="text-align:right;"> 109 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 17 </td>
-   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> -1 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> -6 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 009151 </td>
