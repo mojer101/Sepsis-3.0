@@ -108,7 +108,7 @@ p2 <- ggplot(data = plotdf, aes(x = ICULOS, y =Resp, group = plotdf$PatientID,
        title = "Respiratory Rate Over Course of Hospital Visit for Current Sepsis Patients")
 
   
-p2
+p2 + xlim(0,72)
   
 #Temp
 p3 <- ggplot(data = plotdf, aes(x = ICULOS, y =Temp, group = plotdf$PatientID,
@@ -120,6 +120,6 @@ p3 <- ggplot(data = plotdf, aes(x = ICULOS, y =Temp, group = plotdf$PatientID,
        y = "Temperature",
        title = "Temperature Over Course of Hospital Visit for Current Sepsis Patients") 
 
-p3
+p3 + xlim(0,72)
 
 ```
