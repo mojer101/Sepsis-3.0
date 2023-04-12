@@ -3,7 +3,7 @@ Sepsis Data Report
 
 ## Sepsis Patient Information
 
-### Data last updated: 2023-04-11 21:48:21
+### Data last updated: 2023-04-11 22:31:41
 
 #### Current Vitals for Patients with Sepsis
 
@@ -565,14 +565,14 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 009484 </td>
-   <td style="text-align:right;"> 66 </td>
+   <td style="text-align:right;"> 67 </td>
    <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 109 </td>
-   <td style="text-align:right;"> 38.28 </td>
-   <td style="text-align:right;"> 20 </td>
-   <td style="text-align:right;"> -10 </td>
+   <td style="text-align:right;"> 110 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -2 </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> -1 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 009702 </td>
