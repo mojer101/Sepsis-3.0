@@ -3,7 +3,7 @@ Sepsis Data Report
 
 ## Sepsis Patient Information
 
-### Data last updated: 2023-04-12 17:31:50
+### Data last updated: 2023-04-12 18:31:51
 
 #### Current Vitals for Patients with Sepsis
 
@@ -20,10 +20,10 @@ Sepsis Data Report
 <tbody>
   <tr>
    <td style="text-align:left;"> 009484 </td>
-   <td style="text-align:right;"> 89 </td>
-   <td style="text-align:right;"> 127 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:right;"> 91 </td>
+   <td style="text-align:right;"> 84 </td>
+   <td style="text-align:right;"> 36.28 </td>
+   <td style="text-align:right;"> 24 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 004698 </td>
@@ -572,14 +572,14 @@ Sepsis Data Report
   </tr>
   <tr>
    <td style="text-align:left;"> 009484 </td>
-   <td style="text-align:right;"> 89 </td>
+   <td style="text-align:right;"> 91 </td>
    <td style="text-align:left;"> Yes </td>
-   <td style="text-align:right;"> 127 </td>
+   <td style="text-align:right;"> 84 </td>
+   <td style="text-align:right;"> 36.28 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> -24 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 25 </td>
-   <td style="text-align:right;"> 13 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> -2 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 009702 </td>
