@@ -1,610 +1,72 @@
-Sepsis Data Report
-================
+# Sepsis Data Report
 
 ## Sepsis Patient Information
 
-### Data last updated: 2023-04-25 10:32:09
+### Data last updated: 2023-04-25 11:44:01
 
 #### Current Vitals for Patients with Sepsis
 
-<table>
- <thead>
-  <tr>
-   <th style="text-align:left;"> PatientID </th>
-   <th style="text-align:right;"> Hours in Hospital </th>
-   <th style="text-align:right;"> Heart Rate </th>
-   <th style="text-align:right;"> Temperature </th>
-   <th style="text-align:right;"> Respiratory Rate </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> 009484 </td>
-   <td style="text-align:right;"> 94 </td>
-   <td style="text-align:right;"> 94 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 24 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 004698 </td>
-   <td style="text-align:right;"> 20 </td>
-   <td style="text-align:right;"> 70 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 14 </td>
-  </tr>
-</tbody>
-</table>
+| PatientID | Hours in Hospital | Heart Rate | Temperature | Respiratory Rate |
+|:----------|------------------:|-----------:|------------:|-----------------:|
+| 009484    |                94 |         94 |          NA |               24 |
+| 004698    |                20 |         70 |          NA |               14 |
 
 #### Change in Vitals for All Patients
 
-<table>
-<caption>Change refers to change from last hour</caption>
- <thead>
-  <tr>
-   <th style="text-align:left;"> PatientID </th>
-   <th style="text-align:right;"> Hours in Hospital </th>
-   <th style="text-align:left;"> Sepsis </th>
-   <th style="text-align:right;"> Heart Rate </th>
-   <th style="text-align:right;"> Temperature </th>
-   <th style="text-align:right;"> Respiratory Rate </th>
-   <th style="text-align:right;"> Heart Rate Change </th>
-   <th style="text-align:right;"> Temperature Change </th>
-   <th style="text-align:right;"> Respiration Rate Change </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> 000313 </td>
-   <td style="text-align:right;"> 41 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 74 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -5 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 000335 </td>
-   <td style="text-align:right;"> 44 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 66 </td>
-   <td style="text-align:right;"> 37.61 </td>
-   <td style="text-align:right;"> 21 </td>
-   <td style="text-align:right;"> -8 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 6 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 000341 </td>
-   <td style="text-align:right;"> 23 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 000470 </td>
-   <td style="text-align:right;"> 21 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 63 </td>
-   <td style="text-align:right;"> 36.89 </td>
-   <td style="text-align:right;"> 14 </td>
-   <td style="text-align:right;"> -4 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 000534 </td>
-   <td style="text-align:right;"> 19 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 98 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 23 </td>
-   <td style="text-align:right;"> -5 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 000558 </td>
-   <td style="text-align:right;"> 17 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 78 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 26 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 000673 </td>
-   <td style="text-align:right;"> 40 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 115 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 24 </td>
-   <td style="text-align:right;"> 24 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 12 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 000902 </td>
-   <td style="text-align:right;"> 42 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 90 </td>
-   <td style="text-align:right;"> 37.28 </td>
-   <td style="text-align:right;"> 15 </td>
-   <td style="text-align:right;"> 7 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 001083 </td>
-   <td style="text-align:right;"> 57 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 67 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 17 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 001282 </td>
-   <td style="text-align:right;"> 39 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 001309 </td>
-   <td style="text-align:right;"> 20 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 82 </td>
-   <td style="text-align:right;"> 36.78 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 001545 </td>
-   <td style="text-align:right;"> 45 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 99 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 18 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 001749 </td>
-   <td style="text-align:right;"> 42 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 65 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 14 </td>
-   <td style="text-align:right;"> -11 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 001772 </td>
-   <td style="text-align:right;"> 32 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 002006 </td>
-   <td style="text-align:right;"> 34 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 70 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 15 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 002320 </td>
-   <td style="text-align:right;"> 36 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 60 </td>
-   <td style="text-align:right;"> 37.56 </td>
-   <td style="text-align:right;"> 14 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 002444 </td>
-   <td style="text-align:right;"> 50 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 52 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 16 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 002484 </td>
-   <td style="text-align:right;"> 29 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 61 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 19 </td>
-   <td style="text-align:right;"> -2 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 003032 </td>
-   <td style="text-align:right;"> 18 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 003371 </td>
-   <td style="text-align:right;"> 20 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 65 </td>
-   <td style="text-align:right;"> 36.89 </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:right;"> -4 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 003531 </td>
-   <td style="text-align:right;"> 31 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 84 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 16 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 003535 </td>
-   <td style="text-align:right;"> 47 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 95 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 25 </td>
-   <td style="text-align:right;"> -5 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 003588 </td>
-   <td style="text-align:right;"> 18 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 81 </td>
-   <td style="text-align:right;"> 37.33 </td>
-   <td style="text-align:right;"> 15 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 004104 </td>
-   <td style="text-align:right;"> 47 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 117 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 25 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 004125 </td>
-   <td style="text-align:right;"> 55 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 72 </td>
-   <td style="text-align:right;"> 37.40 </td>
-   <td style="text-align:right;"> 22 </td>
-   <td style="text-align:right;"> -10 </td>
-   <td style="text-align:right;"> 0.1 </td>
-   <td style="text-align:right;"> 2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 004250 </td>
-   <td style="text-align:right;"> 11 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 55 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 21 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 004459 </td>
-   <td style="text-align:right;"> 7 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 004472 </td>
-   <td style="text-align:right;"> 29 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 004474 </td>
-   <td style="text-align:right;"> 39 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 83 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 14 </td>
-   <td style="text-align:right;"> 11 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 004698 </td>
-   <td style="text-align:right;"> 20 </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:right;"> 70 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 14 </td>
-   <td style="text-align:right;"> -1 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 005682 </td>
-   <td style="text-align:right;"> 46 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 82 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 18 </td>
-   <td style="text-align:right;"> 10 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 006449 </td>
-   <td style="text-align:right;"> 24 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 72 </td>
-   <td style="text-align:right;"> 37.17 </td>
-   <td style="text-align:right;"> 15 </td>
-   <td style="text-align:right;"> -1 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 006725 </td>
-   <td style="text-align:right;"> 53 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 54 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 13 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 006750 </td>
-   <td style="text-align:right;"> 51 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 80 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 18 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 006876 </td>
-   <td style="text-align:right;"> 54 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 77 </td>
-   <td style="text-align:right;"> 36.78 </td>
-   <td style="text-align:right;"> 29 </td>
-   <td style="text-align:right;"> -2 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 006963 </td>
-   <td style="text-align:right;"> 37 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 86 </td>
-   <td style="text-align:right;"> 36.89 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 007058 </td>
-   <td style="text-align:right;"> 43 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 66 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 22 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 007200 </td>
-   <td style="text-align:right;"> 35 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 107 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 24 </td>
-   <td style="text-align:right;"> -41 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 007350 </td>
-   <td style="text-align:right;"> 49 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 007996 </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 85 </td>
-   <td style="text-align:right;"> 38.40 </td>
-   <td style="text-align:right;"> 19 </td>
-   <td style="text-align:right;"> 10 </td>
-   <td style="text-align:right;"> 0.0 </td>
-   <td style="text-align:right;"> -2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 008242 </td>
-   <td style="text-align:right;"> 54 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 89 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 11 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 008356 </td>
-   <td style="text-align:right;"> 45 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 88 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 20 </td>
-   <td style="text-align:right;"> -2 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 008409 </td>
-   <td style="text-align:right;"> 22 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 75 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -6 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 008596 </td>
-   <td style="text-align:right;"> 22 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 91 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 25 </td>
-   <td style="text-align:right;"> -2 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 008943 </td>
-   <td style="text-align:right;"> 42 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 94 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 13 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -15 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 009151 </td>
-   <td style="text-align:right;"> 41 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 62 </td>
-   <td style="text-align:right;"> 36.44 </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 009181 </td>
-   <td style="text-align:right;"> 51 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 70 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 18 </td>
-   <td style="text-align:right;"> -1 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> -8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 009484 </td>
-   <td style="text-align:right;"> 94 </td>
-   <td style="text-align:left;"> Yes </td>
-   <td style="text-align:right;"> 94 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 24 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 009702 </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> 86 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 16 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 009774 </td>
-   <td style="text-align:right;"> 37 </td>
-   <td style="text-align:left;"> No </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-</tbody>
-</table>
+| PatientID | Hours in Hospital | Sepsis | Heart Rate | Temperature | Respiratory Rate | Heart Rate Change | Temperature Change | Respiration Rate Change |
+|:----------|------------------:|:-------|-----------:|------------:|-----------------:|------------------:|-------------------:|------------------------:|
+| 000313    |                41 | No     |         74 |          NA |               NA |                -5 |                 NA |                      NA |
+| 000335    |                44 | No     |         66 |       37.61 |               21 |                -8 |                 NA |                       6 |
+| 000341    |                23 | No     |         NA |          NA |               NA |                NA |                 NA |                      NA |
+| 000470    |                21 | No     |         63 |       36.89 |               14 |                -4 |                 NA |                       4 |
+| 000534    |                19 | No     |         98 |          NA |               23 |                -5 |                 NA |                       8 |
+| 000558    |                17 | No     |         78 |          NA |               26 |                 3 |                 NA |                       9 |
+| 000673    |                40 | No     |        115 |          NA |               24 |                24 |                 NA |                      12 |
+| 000902    |                42 | No     |         90 |       37.28 |               15 |                 7 |                 NA |                      -3 |
+| 001083    |                57 | No     |         67 |          NA |               17 |                 0 |                 NA |                      -1 |
+| 001282    |                39 | No     |         NA |          NA |               NA |                NA |                 NA |                      NA |
+| 001309    |                20 | No     |         82 |       36.78 |                8 |                 1 |                 NA |                       1 |
+| 001545    |                45 | No     |         99 |          NA |               18 |                 5 |                 NA |                      -5 |
+| 001749    |                42 | No     |         65 |          NA |               14 |               -11 |                 NA |                      -4 |
+| 001772    |                32 | No     |         NA |          NA |               NA |                NA |                 NA |                      NA |
+| 002006    |                34 | No     |         70 |          NA |               15 |                 0 |                 NA |                       0 |
+| 002320    |                36 | No     |         60 |       37.56 |               14 |                 0 |                 NA |                       0 |
+| 002444    |                50 | No     |         52 |          NA |               16 |                 0 |                 NA |                       3 |
+| 002484    |                29 | No     |         61 |          NA |               19 |                -2 |                 NA |                       1 |
+| 003032    |                18 | No     |         NA |          NA |               NA |                NA |                 NA |                      NA |
+| 003371    |                20 | No     |         65 |       36.89 |               12 |                -4 |                 NA |                      -2 |
+| 003531    |                31 | No     |         84 |          NA |               16 |                 0 |                 NA |                      -3 |
+| 003535    |                47 | No     |         95 |          NA |               25 |                -5 |                 NA |                      NA |
+| 003588    |                18 | No     |         81 |       37.33 |               15 |                NA |                 NA |                      NA |
+| 004104    |                47 | No     |        117 |          NA |               25 |                 2 |                 NA |                       1 |
+| 004125    |                55 | No     |         72 |       37.40 |               22 |               -10 |                0.1 |                       2 |
+| 004250    |                11 | No     |         55 |          NA |               21 |                 3 |                 NA |                       8 |
+| 004459    |                 7 | No     |         NA |          NA |               NA |                NA |                 NA |                      NA |
+| 004472    |                29 | No     |         NA |          NA |               NA |                NA |                 NA |                      NA |
+| 004474    |                39 | No     |         83 |          NA |               14 |                11 |                 NA |                       0 |
+| 004698    |                20 | Yes    |         70 |          NA |               14 |                -1 |                 NA |                      -1 |
+| 005682    |                46 | No     |         82 |          NA |               18 |                10 |                 NA |                       3 |
+| 006449    |                24 | No     |         72 |       37.17 |               15 |                -1 |                 NA |                      -2 |
+| 006725    |                53 | No     |         54 |          NA |               13 |                 1 |                 NA |                       0 |
+| 006750    |                51 | No     |         80 |          NA |               18 |                 1 |                 NA |                       1 |
+| 006876    |                54 | No     |         77 |       36.78 |               29 |                -2 |                 NA |                       1 |
+| 006963    |                37 | No     |         86 |       36.89 |                8 |                 3 |                 NA |                      -4 |
+| 007058    |                43 | No     |         66 |          NA |               22 |                NA |                 NA |                      NA |
+| 007200    |                35 | No     |        107 |          NA |               24 |               -41 |                 NA |                      -2 |
+| 007350    |                49 | No     |         NA |          NA |               NA |                NA |                 NA |                      NA |
+| 007996    |                12 | No     |         85 |       38.40 |               19 |                10 |                0.0 |                      -2 |
+| 008242    |                54 | No     |         89 |          NA |               11 |                 6 |                 NA |                      -1 |
+| 008356    |                45 | No     |         88 |          NA |               20 |                -2 |                 NA |                       1 |
+| 008409    |                22 | No     |         75 |          NA |               NA |                -6 |                 NA |                      NA |
+| 008596    |                22 | No     |         91 |          NA |               25 |                -2 |                 NA |                       1 |
+| 008943    |                42 | No     |         94 |          NA |               13 |                 2 |                 NA |                     -15 |
+| 009151    |                41 | No     |         62 |       36.44 |               12 |                 0 |                 NA |                      -5 |
+| 009181    |                51 | No     |         70 |          NA |               18 |                -1 |                 NA |                      -8 |
+| 009484    |                94 | Yes    |         94 |          NA |               24 |                 6 |                 NA |                       1 |
+| 009702    |                12 | No     |         86 |          NA |               16 |                NA |                 NA |                      NA |
+| 009774    |                37 | No     |         NA |          NA |               NA |                NA |                 NA |                      NA |
+
+Change refers to change from last hour
 
 ![](README_files/figure-commonmark/unnamed-chunk-4-1.png)
 
