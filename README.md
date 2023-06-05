@@ -2,7 +2,7 @@
 
 ## Sepsis Patient Information
 
-### Data last updated: 2023-06-05 03:32:46
+### Data last updated: 2023-06-05 04:31:59
 
 #### Current Vitals for Patients with Sepsis
 
